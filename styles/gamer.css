@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Lato:wght@300;400;700&family=Nunito+Sans:wght@700&family=Open+Sans:ital,wght@0,700;0,800;1,400&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav li {
+  list-style: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.goat {
+  color: #f948b2;
+  font-family: Work Sans;
+  font-size: 77px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.banner-img {
+  width: 40%;
+  height: 40%;
+  margin-right: 130px;
+  margin-top: -280px;
+}
+
+.banner-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-left-info {
+  position: relative;
+  bottom: 400px;
+  left: 200px;
+}
+
+.banner-left-info > p {
+  color: #534c64;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-bottom: 7px;
+}
+
+.banner-left-info > button {
+  padding: 18px 33px;
+  border-radius: 48px;
+  border: none;
+  margin-top: 22px;
+  margin-right: 18px;
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sign-in {
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+}
+
+.go-rogue {
+  background: #4ec5f7;
+}
+
+.displaying-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.displaying-between {
+  padding: 30px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.displaying-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-visible {
+  visibility: hidden;
+}
+
+.videos:hover {
+  opacity: 0.5;
+}
+.videos:hover .is-visible {
+  visibility: visible;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.video-1 {
+  background-image: url("../images/Rectangle\ 4.png");
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+.play-last {
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.play-last img {
+  width: 80%;
+  height: 70%;
+}
+
+.play-last-sub img {
+  position: relative;
+  bottom: 200px;
+  right: 140px;
+  width: 40%;
+  height: 40%;
+}
+
+footer {
+  background: #0b0223;
+  padding: 150px 300px;
+}
+
+.gamer-1 {
+  color: #ff42a5;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+}
+.gamer-2 {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* gap: 1.5rem; */
+}
+
+.information > p {
+  color: #fff;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .banner {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    margin-right: -200px;
+    margin-top: 0;
+  }
+  .banner-left img {
+    margin-left: 130px;
+  }
+  .banner-left-info {
+    bottom: 312px;
+  }
+  .banner-left-info > button {
+    padding: 12px 27px;
+    margin-top: 10px;
+  }
+  footer {
+    background: #0b0223;
+    padding: 150px 90px;
+  }
+
+  .gamer-1 {
+    font-size: 40px;
+  }
+  .gamer-2 {
+    font-size: 40px;
+  }
+
+  .information {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .information > p {
+    font-size: 8px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
