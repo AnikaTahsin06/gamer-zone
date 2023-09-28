@@ -313,6 +313,55 @@ nav li {
   height: 100%;
 }
 
+.sorted-games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 130px;
+}
+
+.sorted-games > div > img {
+  width: 30%;
+  height: 30%;
+}
+
+.sorted-games > div > p {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sorted-games > div {
+  cursor: pointer;
+}
+
+.sorted-games > div:hover {
+  border-radius: 50px;
+  border: 1.5px solid var(--Linear, #ff42a5);
+  background: #fff;
+  padding: 2px;
+}
+
+.sorted-games > div:hover p {
+  font-family: Work Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .play-games {
   display: flex;
   justify-content: center;
@@ -505,6 +554,10 @@ footer {
 
   .careers-img {
     width: 80%;
+  }
+
+  .sorted-games {
+    margin: 0;
   }
 
   .play-games {
