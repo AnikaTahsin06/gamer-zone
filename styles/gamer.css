@@ -19,6 +19,36 @@ nav {
 
 nav li {
   list-style: none;
+  font-size: 12px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50.041px;
+  height: 25px;
+}
+
+.follow-link {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 10px;
+}
+
+.follow-link > svg {
+  width: 20px;
+  height: 20px;
 }
 
 .banner {
@@ -102,7 +132,7 @@ nav li {
 }
 
 .displaying-between {
-  padding: 30px 200px;
+  padding: 18px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,12 +145,27 @@ nav li {
   gap: 15px;
   align-items: flex-end;
 }
-
-.videos {
-  display: flex;
+.video-container {
+  width: 15%;
+}
+.funny-videos {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.videos img {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .is-visible {
@@ -138,11 +183,36 @@ nav li {
   opacity: 1;
 }
 
-.video-1 {
+.open-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 211px;
+  left: 279px;
+}
+
+/* .video-1 {
   background-image: url("../images/Rectangle\ 4.png");
   height: 400px;
   background-repeat: no-repeat;
 }
+.video-2 {
+  background-image: url("../images/Rectangle\ 4.png");
+  height: 400px;
+  background-repeat: no-repeat;
+}
+.video-3 {
+  background-image: url("../images/Rectangle\ 4.png");
+  height: 400px;
+  background-repeat: no-repeat;
+} */
+/* .video-4 {
+  background-image: url("../images/Rectangle\ 4.png");
+  height: 400px;
+  background-repeat: no-repeat;
+} */
 
 .play-last {
   position: relative;
@@ -163,6 +233,86 @@ nav li {
   height: 40%;
 }
 
+.careers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+}
+
+.careers-info {
+  width: 50%;
+}
+
+.careers-info-sub {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.careers-info-sub > h2 {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.careers-info-sub > p {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.careers-info-sub > button {
+  font-family: Work Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #ff42a5;
+  padding: 15px 33px;
+  border-radius: 48px;
+  border: none;
+  background: #fff;
+  margin-top: 18px;
+}
+
+.careers-tiny {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.careers-tiny-half {
+  width: 25%;
+}
+
+.careers-tiny-half > p {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.careers-img {
+  background-image: url(../images/Vector\ 2.png);
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.careers-img img {
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   background: #0b0223;
   padding: 150px 300px;
@@ -172,29 +322,69 @@ footer {
   color: #ff42a5;
   text-align: center;
   font-family: Work Sans;
-  font-size: 45px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
 }
 .gamer-2 {
   color: #fff;
   font-family: Work Sans;
-  font-size: 45px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.gamer-2-black {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 28px;
   font-weight: 700;
 }
 
-.information {
+.information-1 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
   /* gap: 1.5rem; */
 }
 
-.information > p {
+.information-1 > p {
   color: #fff;
   text-align: center;
   font-family: Work Sans;
   font-size: 10px;
   font-weight: 400;
+  line-height: 40px;
+}
+
+.information-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  /* gap: 1.5rem; */
+}
+
+.information-2 > p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.information-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.information-3 > svg {
+  width: 22px;
+  height: 22px;
+  margin: 20px 0;
 }
 
 .copyright {
@@ -228,6 +418,29 @@ footer {
     padding: 12px 27px;
     margin-top: 10px;
   }
+  .displaying-center {
+    flex-direction: column;
+  }
+  .nav-info {
+    flex-direction: column;
+  }
+  .displaying-between {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .video-container {
+    width: 85%;
+  }
+  .careers-container {
+    flex-direction: column;
+  }
+  .careers-info {
+    width: 80%;
+  }
+
+  .careers-img {
+    width: 80%;
+  }
   footer {
     background: #0b0223;
     padding: 150px 90px;
@@ -240,13 +453,21 @@ footer {
     font-size: 40px;
   }
 
-  .information {
+  .information-1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
   }
 
-  .information > p {
+  .information-1 > p {
     font-size: 8px;
+  }
+  .information-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .information-2 > p {
+    font-size: 7px;
   }
 
   .copyright {
