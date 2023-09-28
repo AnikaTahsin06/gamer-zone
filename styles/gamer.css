@@ -148,6 +148,11 @@ nav li {
 .video-container {
   width: 15%;
 }
+
+.online-video {
+  margin-top: -130px;
+}
+
 .funny-videos {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
@@ -517,20 +522,25 @@ footer {
     gap: 30px;
   }
   .banner-img {
-    width: 100%;
-    height: 100%;
-    margin-right: -200px;
+    width: 73%;
+    height: 91%;
+    margin-right: -6px;
     margin-top: 0;
   }
   .banner-left img {
-    margin-left: 130px;
+    /* margin-left: 130px; */
   }
   .banner-left-info {
     bottom: 312px;
+    left: 0;
+    margin-left: 20px;
   }
   .banner-left-info > button {
     padding: 12px 27px;
     margin-top: 10px;
+  }
+  .banner-left-info > p {
+    text-align: start !important;
   }
   .displaying-center {
     flex-direction: column;
