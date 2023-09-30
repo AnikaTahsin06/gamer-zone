@@ -131,6 +131,13 @@ nav li {
   gap: 35px;
 }
 
+.displaying-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
 .displaying-between {
   padding: 18px 200px;
   display: flex;
@@ -147,6 +154,11 @@ nav li {
 }
 .video-container {
   width: 15%;
+  margin-top: 30px;
+}
+
+.video-container > p {
+  margin-top: -30px;
 }
 
 .online-video {
@@ -167,10 +179,6 @@ nav li {
 .videos img {
   width: 100%;
   height: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 .is-visible {
@@ -193,9 +201,29 @@ nav li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 211px;
-  left: 279px;
+  position: relative;
+  bottom: 130px;
+}
+
+.open-video > svg {
+  width: 20%;
+  height: 20%;
+}
+
+.open-video > p {
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* .video-1 {
@@ -516,6 +544,143 @@ footer {
   line-height: normal;
 }
 
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .banner {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .banner-img {
+    width: 73%;
+    height: 91%;
+    margin-right: -6px;
+    margin-top: 0;
+  }
+  .banner-left img {
+    /* margin-left: 130px; */
+  }
+  .banner-left-info {
+    bottom: 312px;
+    left: 0;
+    margin-left: 20px;
+  }
+  .banner-left-info > button {
+    padding: 12px 27px;
+    margin-top: 10px;
+  }
+  .banner-left-info > p {
+    text-align: start !important;
+  }
+  .displaying-center {
+    flex-direction: column;
+  }
+
+  .displaying-video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-left: 20px;
+  }
+  .open-video {
+    bottom: 170px;
+  }
+  .nav-info {
+    flex-direction: column;
+  }
+  .displaying-between {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .video-container {
+    width: 85%;
+  }
+
+  .careers-container {
+    flex-direction: column;
+  }
+  .careers-info {
+    width: 80%;
+  }
+
+  .careers-img {
+    width: 80%;
+  }
+
+  .sorted-games {
+    margin: 0;
+  }
+
+  .play-games {
+    flex-direction: column-reverse;
+  }
+
+  .play-games-1 {
+    width: 80%;
+  }
+
+  .play-games-2 {
+    margin-right: 0;
+    width: 80%;
+  }
+
+  .play-games-2 > h2,
+  p {
+    text-align: center;
+  }
+
+  .img-part {
+    margin: 50px;
+    flex-direction: column;
+    margin: 50px 0 0 35px;
+  }
+
+  .big-img {
+    width: 100%;
+    height: 100%;
+    left: -30px;
+  }
+
+  .small-img {
+    width: 50%;
+    height: 50%;
+    top: -75px;
+    right: -35px;
+  }
+
+  footer {
+    background: #0b0223;
+    padding: 150px 90px;
+  }
+
+  .gamer-1 {
+    font-size: 40px;
+  }
+  .gamer-2 {
+    font-size: 40px;
+  }
+
+  .information-1 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .information-1 > p {
+    font-size: 8px;
+  }
+  .information-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .information-2 > p {
+    font-size: 7px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner {
     flex-direction: column-reverse;
@@ -552,8 +717,16 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .displaying-video {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 50px;
+  }
   .video-container {
     width: 85%;
+  }
+  .open-video {
+    bottom: 250px;
   }
   .careers-container {
     flex-direction: column;
